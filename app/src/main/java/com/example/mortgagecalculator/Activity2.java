@@ -66,7 +66,7 @@ public class Activity2 extends AppCompatActivity {
 
                     /*Monthly payment calculation*/
                     double monthlyInterestRate = intRate / (12 * 100.00);
-                    double monthwisePayment = (monthlyInterestRate * morAmt) / 1 - Math.pow((1 + monthlyInterestRate), -loanTermInMonths);
+                    double monthwisePayment = (monthlyInterestRate * morAmt) / (1 - (Math.pow((1 + monthlyInterestRate), -loanTermInMonths)));
 
                     /*Rounding the value to two decimal places*/
                     DecimalFormat formatter = new DecimalFormat("#.##");
